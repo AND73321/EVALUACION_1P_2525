@@ -3,8 +3,8 @@
 ### Carrera de Ingeniería en Software  
 
 **Asignatura:** Manejo y Configuración de Software  
-**Nombre del Estudiante:** ___________________________  
-**Fecha:** ___________________  
+**Nombre del Estudiante:** Edison Alejandro Andrade Ocaña  
+**Fecha:** 30/04/2025  
 
 ---
 
@@ -37,7 +37,20 @@
   - ¿Cómo se verificó que se estaba trabajando sobre el fork y no sobre el repositorio original?
 
 **📝 Respuesta:**
+- `git clone:` Este comando nos sirve para realizar una clonacion de un repositorio remoto hacia nuestra maquina de forma local. 
+- `fork:` Un fork nos sirve para hacer una copia de un repositorio hacia nuestra cuenta de GitHub.
+- `git pull:` Este comando nos sirve para traes los cambios que se han realizado en un repositorio remota hacia nuestra maquina local.
 
+- ¿Cómo se realizó el fork?
+- Para esto se tiene que estar en el repositorio remoto EVALUACION_1P_2525 del ingeniero Santiago Jara, donde en la parte derecha se visualizara una sección con el nombre de fork, se debe dar click ahí y seleccionar un nombre con el cual se guardara en nuestra cuenta de GitHub, luego hay que desmacar la opcion de solo traer la rama main y dar en continuar y con eso ya tendriamos el una copia de ese repositorio en nuestra cuenta de GitHub.
+  - ¿Cómo se realizó el clone del fork?
+  - Para esto se debe seleccionar el apartado de Code en nuestra cuenta de GitHub, donde esta el repositorio copiado mediante fork y copiar la URL y luego donde se va clonar el repositorio se debe digitar el comando `git clone <url>`.
+![alt text](image-1.png)
+  
+  - ¿Cómo se verificó que se estaba trabajando sobre el fork y no sobre el repositorio original?
+  - Hay que tomar en cuneta que se debe estar en nuestra  cuenta de GitHub y que debajo del repositorio diga que es un fork de usuario de GitHub que se haya realizado el fork.
+
+  ![alt text](image.png)
 <!-- Escribe aquí tu respuesta a la Pregunta 1 -->
 
 ---
@@ -58,7 +71,16 @@
 - Solo el **segundo commit** debe llevar el **tag `"Pregunta 2"`**.
 
 **📝 Respuesta:**
+**Configuración del .GITIGNORE**
+![alt text](image-2.png)
 
+**primer commit**
+![alt text](image-3.png)
+
+**segundo commit**
+GITIGNORE:Se utiliza para evitar que ciertos archivos, modulos y carpetas sean rastreados por Git, de esta manera manteniendo el repositorio limpio.
+En la siguiente imagen se muestra mediante el comando `git status` que los archivos .log y la carpeta temp/ no esta siendo rastreada.
+![alt text](image-4.png)
 <!-- Escribe aquí tu explicación y evidencia para la Pregunta 2 -->
 
 ---
@@ -88,7 +110,17 @@
 - El flujo debe respetar la estructura de Git Flow con las ramas `develop` y `main`.
 
 **📝 Respuesta:**
+- Los **comandos exactos** utilizados desde la inicialización de Git Flow hasta el cierre de la feature.
+ git flow init
+ git flow feature start ingresar-encabezado
+ git flow feature finish ingresar-encabezado
 
+ - Descripción del proceso seguido
+ Primero se debe iniciar con el comando git flow init luego se selecciona las ramas main y develop, para luego crear el la rama feature/ingresar-encabezado desde la rama develop, hacer los cambios necesarios en la feature y luego cerrala con el comando  git flow feature finish ingresar-encabezado
+ ![alt text](image-5.png)
+![alt text](image-6.png)
+ - Ventajas
+ Git Flow facilita la organización, mejora la colaboración, y promueve un proceso de lanzamiento predecible y controlado
 <!-- Escribe aquí tu respuesta completa a la Pregunta 3 -->
 
 ---
@@ -121,7 +153,17 @@
 - Una explicación de cómo se comprobó que el repositorio requería revisión antes de aceptar el pull request (por ejemplo, a través del mensaje mostrado por GitHub).
 
 **📝 Respuesta:**
+`ISSUE:` Un issue es una herramienta de seguimiento de tareas en GitHub. Se usa para reportar errores (bugs), sugerir nuevas funcionalidades, discutir mejoras o problemas y asignar tareas a colaboradores.
 
+`PULL REQUEST:`Un pull request es una solicitud para que los cambios hechos en una rama sean revisados y, si están correctos, fusionados con otra rama.
+
+`DIFERENCIA:` Un *issue* describe un problema o tarea, mientras que un *pull request* propone una solución con cambios concretos en el código.
+
+- Un resumen del procedimiento realizado.
+- El número del issue creado.
+#24
+- El enlace al pull request.
+- Una explicación de cómo se comprobó que el repositorio requería revisión antes de aceptar el pull request (por ejemplo, a través del mensaje mostrado por GitHub).
 <!-- Escribe aquí tu respuesta completa a la Pregunta 4 -->
 
 ---
